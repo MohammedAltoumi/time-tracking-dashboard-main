@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="profile__card">
+      <section class="profile">
+        <img src="./images/image-jeremy.png" class="profile__img">
+        <span>
+          Report for
+        </span>
+        <h1>
+          Jeremy Robson
+        </h1>
+      </section>
+      <section class="buttons">
+        <a href="/daily" class="daily">
+          Daily
+        </a>
+        <a href="/weekly" class="weekly">
+          Weekly
+        </a>
+        <a href="/monthly" class="monthly">
+          Monthly
+        </a>
+        <a href=""></a>
+      </section>
+    </div>
+    <div class="cards">
+      
+      {%CARDS%}
+
+    </div>
+
+  </div> 
+</body>
+<script src="ingine.js"></script>
+</html>

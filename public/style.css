@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    box-sizing: border-box;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20px;
+    min-height: 100vh;
+    column-gap: 20px;
+    max-width: 860px;
+}
+
+.profile__card {
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.profile {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    height: 210px;
+    padding: 20px;
+    width: 160px;
+}
+
+.profile__img {
+    display: block;
+    border-radius: 100%;
+    width: 50px;
+    aspect-ratio: 1;
+    border: white 2px solid;
+    margin-bottom: 27px;
+}
+
+.profile h1 {
+    word-wrap: break-word;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 0;
+}
+.profile span {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.buttons {
+    padding: 0 20px 10px;
+    width: 160px;
+}
+
+.buttons a {
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    margin-block: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards .card {
+    background-image: url("./images/icon-work.svg");
+    background-color: rgb(247, 115, 68);
+    border-radius: 10px;
+    width: 200px;
+    height: 165px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-y: -5%;
+    background-position-x: 95%;
+}
+
+.cards .card *  {
+    padding: 0;
+}
+
+#card__body {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    height: 135px;
+    margin-top: 31px;
+    
+}
+
+#card__body h2 {
+    font-size: 35px;
+    font-weight: 100;
+    margin: 0 20px;    
+}
+
+#card__body span {
+    font-size: x-small;
+    opacity: 0.5;
+    margin: 0 20px;    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+
+@media (max-width : 700px) {
+    body {
+        overflow: scroll;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .cards .card {
+        width: 90%;
+    }
+    .profile, .buttons {
+        width: auto;
+    }
+    .profile__card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .buttons a {
+        padding-left: 50px;
+    }
+}
